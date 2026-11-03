@@ -48,4 +48,4 @@ mon-projet-ecommerce/
 
 👨‍💻 Auteur
 
-Projet réalisé dans le but de montrer una simulation d'un panier en ligne
+Projet réalisé dans le but de montrer une simulation d'un panier en ligne
