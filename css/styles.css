@@ -123,12 +123,14 @@ body {
             font-weight: bold;
             font-size: 15px;
             text-decoration: none;
-            transition: transform 0.2s, box-shadow 0.2s ease;
+            transition:
+              transform 0.2s,
+              box-shadow 0.2s ease;
           }
           .btn-products:hover {
             transform: translateY(-2px);
             background-color: #5143cf;
-             box-shadow: 0 5px 12px rgba(81, 67, 207, 0.3);
+            box-shadow: 0 5px 12px rgba(81, 67, 207, 0.3);
           }
         }
         .visual {
@@ -176,7 +178,9 @@ body {
               border-radius: 20px;
               padding: 15px;
               background-color: rgba(255, 254, 254, 0.801);
-              transition: transform 0.3s, box-shadow 0.2s ease;
+              transition:
+                transform 0.3s,
+                box-shadow 0.2s ease;
               span {
                 margin-bottom: 0px;
                 color: black;
@@ -205,12 +209,12 @@ body {
                 color: white;
                 border-radius: 10px;
                 cursor: pointer;
-                &:hover{
+                &:hover {
                   background-color: #5143cf;
                 }
               }
             }
-            div:hover{
+            div:hover {
               transform: translateY(-5px);
               box-shadow: 0 5px 12px rgba(81, 67, 207, 0.3);
             }
@@ -375,6 +379,102 @@ body {
     .experiencia,
     .year {
       color: rgba(0, 0, 0, 0.455);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    nav {
+      width: 450px;
+      grid-template-columns: 1fr 2fr;
+      .logo {
+        .img {
+          gap: 10px;
+        }
+      }
+      .options {
+        display: none;
+      }
+    }
+    .div-background-color {
+      .div-content {
+        width: 450px;
+        header {
+          width: 450px;
+          margin: 0px auto 35px auto;
+          grid-template-columns: 1fr;
+          padding: 50px;
+          .presentacion {
+            .servicios {
+              ul {
+                li {
+                  font-weight: bold;
+                }
+              }
+            }
+            .title {
+              p {
+                font-size: 25px;
+                &.pink {
+                  margin-top: -15px;
+                }
+              }
+            }
+            .descripcion {
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+          .visual {
+            display: none;
+          }
+        }
+        section {
+          width: 450px;
+          grid-template-columns: 1fr;
+          .productos {
+            .titulo {
+              grid-template-columns: 1fr;
+              .calidad {
+                display: none;
+              }
+            }
+            .lista-productos {
+              width: 450px;
+              grid-template-columns: 1fr 1fr;
+            }
+          }
+          .carrito {
+            width: 450px;
+            .encabezado {
+              grid-template-columns: 3fr 1fr;
+              .compra {
+                span {
+                  display: block;
+                }
+              }
+              .resumen {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      width: 450px;
+      grid-template-columns: 1fr 1fr 1fr;
+      .logo {
+        .img {
+          gap: 10px;
+        }
+      }
+      .experiencia,
+      .year {
+        font-size: 10px;
+      }
     }
   }
 }
