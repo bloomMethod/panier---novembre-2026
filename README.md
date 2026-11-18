@@ -54,3 +54,4 @@ mon-projet-ecommerce/
 👨‍💻 Auteur
 
 Projet réalisé dans le but de montrer une simulation d'un panier en ligne
+Mise à jour du projet 17-11-2026
