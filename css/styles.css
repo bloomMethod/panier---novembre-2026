@@ -386,8 +386,9 @@ body {
 @media screen and (max-width: 500px) {
   body {
     nav {
-      width: 450px;
-      grid-template-columns: 1fr 2fr;
+      width: 100%;
+      grid-template-columns: 1fr auto;
+      padding: 15px 20px;
       .logo {
         .img {
           gap: 10px;
@@ -399,12 +400,12 @@ body {
     }
     .div-background-color {
       .div-content {
-        width: 450px;
+        width: 100%;
         header {
-          width: 450px;
+          width: 90%;
           margin: 0px auto 35px auto;
           grid-template-columns: 1fr;
-          padding: 50px;
+          padding: 50px 20px;
           .presentacion {
             .servicios {
               ul {
@@ -432,22 +433,30 @@ body {
           }
         }
         section {
-          width: 450px;
+          width: 100%;
           grid-template-columns: 1fr;
           .productos {
+            span {
+              display: block;
+              margin: 0px 20px;
+            }
             .titulo {
+              width: 90%;
+              margin: 0px auto 20px auto;
               grid-template-columns: 1fr;
               .calidad {
                 display: none;
               }
             }
             .lista-productos {
-              width: 450px;
-              grid-template-columns: 1fr 1fr;
+              width: 90%;
+              margin: 0px auto;
+              grid-template-columns: 1fr;
             }
           }
           .carrito {
-            width: 450px;
+            width: 90%;
+            margin: 0px auto;
             .encabezado {
               grid-template-columns: 3fr 1fr;
               .compra {
@@ -464,16 +473,51 @@ body {
       }
     }
     footer {
-      width: 450px;
-      grid-template-columns: 1fr 1fr 1fr;
+      display: grid;
+      grid-template-columns: 75px 1fr 85px;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      padding: 15px 12px;
+      gap: 6px;
+      position: relative;
       .logo {
+        min-width: 0px;
+        overflow: hidden;
+        justify-self: start;
         .img {
           gap: 10px;
+          h1 {
+            font-size: 13px;
+          }
+          img {
+            width: 25px;
+            height: 25px;
+          }
         }
       }
+
       .experiencia,
       .year {
-        font-size: 10px;
+        min-width: 0px;
+        font-size: 8px;
+        text-align: center;
+      }
+      .experiencia {
+        grid-column: 2;
+        justify-self: stretch;
+        width: 100%;
+        margin: 0;
+        font-size: 9px;
+        white-space: nowrap;
+        text-align: center;
+        position: relative;
+        left: 20px;
+      }
+      .year {
+        justify-self: end;
+        white-space: nowrap;
+        font-size: 7px;
       }
     }
   }
